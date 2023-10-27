@@ -1,4 +1,5 @@
-import Header from "./header/Header"
+import Header from "../components/header/Header"
+import ThemeProvider  from "@/components/Theme/theme-provider"
 
 export const metadata = {
   title: 'CodeX',
@@ -10,8 +11,15 @@ export default function RootLayout({ children }) {
  return (
     <html lang="en">
       <body>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
        <Header />
         {children}
+        </ThemeProvider>
         </body>
     </html>
   )

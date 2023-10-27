@@ -6,7 +6,7 @@ import DesktopHeader from './DesktopHeader'
 
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     const checkIsMobile = () => {
