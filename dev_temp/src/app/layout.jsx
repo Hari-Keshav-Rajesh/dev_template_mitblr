@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Header from "../components/header/Header"
 import ThemeProvider  from "@/components/Theme/theme-provider"
 
