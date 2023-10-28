@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const MobileHeader = () => {
     return(
-        <div className="flex flex-row justify-between h-14 p-3">
+        <div className="flex flex-row justify-between h-10vh p-5">
             <Link href="/">
             <button
 			className="transition duration-150 hover:opacity-70"
