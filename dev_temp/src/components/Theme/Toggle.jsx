@@ -25,7 +25,7 @@ export function ModeToggle() {
     } else {
       setIcon(<SunIcon className={sunIconClasses} />);
     }
-  }, [resolvedTheme]);
+  }, [resolvedTheme,setTheme]);
 
   const toggleTheme = () => {
     const newTheme = resolvedTheme === "dark" ? "light" : "dark";
